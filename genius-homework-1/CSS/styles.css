@@ -1,0 +1,267 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* play-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* play-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+
+
+:root {
+    /* Primary color */
+    --color-primary-light: #FFFFFF;
+    --color-primary-dark: #011C44;
+    --color-brend: #2B7FFF;
+    /* Secondary color */
+    --color-secondary-dark: #4A4A4A;
+    --color-secondary-gray: #747272;
+    --color-secondary-blue: #011F4A;
+    --color-secondary-yellow: #FFD02B;
+    --color-secondary-black: #000000;
+
+}
+
+/* Base */
+body {
+    color: var(--color-primary-dark);
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Button */
+.button {
+    color: var(--color-primary-light);
+    background-color: var(--color-brend);
+    border: 2px solid var(--color-brend);
+    border-radius: 32px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+
+
+}
+
+.button:hover {
+    color: var(--color-primary-dark);
+    background-color: transparent;
+}
+
+/* Link-Header section */
+.link-header {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+
+}
+
+.link-header:hover {
+    color: var(--color-brend);
+    font-weight: 700;
+}
+
+.header-background {
+    background-color: var(--color-primary-light);
+}
+
+
+
+/* Hero section */
+
+.hero-text {
+    line-height: 1.2;
+}
+
+.hero-title {
+    color: var(--color-brend);
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 0.8;
+}
+
+.hero-last-text {
+    color: var(--color-secondary-gray);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Reincornation section */
+.reicornation-title {
+    color: var(--color-secondary-black);
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.15;
+}
+
+.reicornation-title .accent {
+    color: var(--color-brend);
+    text-transform: capitalize;
+}
+
+.reincornation-text .accent {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+/* Why_us section */
+.whyus-title {
+    color: var(--color-secondary-black);
+    text-align: center;
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.15;
+}
+
+.whyus-title .accent {
+    color: var(--color-brend);
+}
+
+.whyus-format-text {
+    color: var(--color-secondary-black);
+    line-height: 1.33;
+}
+
+/* Procedures section */
+
+.procedures-title {
+    color: var(--color-secondary-black);
+    text-align: center;
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.15;
+}
+
+.procedures-title .accent {
+    color: var(--color-brend);
+}
+
+/* Contact section */
+
+.contact-title {
+    color: var(--color-primary-dark);
+    text-align: center;
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.15;
+}
+
+.contact-title .accent {
+    color: var(--color-brend);
+}
+
+.contact-menu {
+    color: var(--color-primary-light);
+    background-color: var(--color-primary-dark);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.17;
+}
+
+.contact-menu .accent {
+    color: var(--color-brend);
+
+}
+
+/* Adresss main */
+.adress-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.adress-link:hover {
+    color: var(--color-brend-light);
+}
+
+/* Link-Footer section */
+.link-footer {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.17;
+}
+
+.link-footer:hover {
+    color: var(--color-brend);
+    font-weight: 600;
+}
+
+/* Adress footer */
+.adress-link {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.17;
+}
+
+.adress-link:hover {
+    color: var(--color-brend);
+
+}
+
+.footer-background {
+    background-color: var(--color-primary-dark);
+}
+
+.copyright {
+    color: var(--color-secondary-gray);
+    font-size: 13px;
+    line-height: 1.17;
+}
